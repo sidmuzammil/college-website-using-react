@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body{
+  background: #f5f5f5;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* for buttons */
+
+.btn {
+  --color: #000000;
+  display: inline-block;
+  padding: 10px 25px;
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #212121;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 250px;
+  border-radius: 50%;
+ }
+ 
+ .btn:hover {
+  color: #fff;
+ }
+ 
+ .btn:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ .btn:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ .btn:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+ }
+ .btn img{
+  margin-left: 10px;
+  width: 18px;
+ }
+ .btn.dark-btn{
+  background-color: #000000;
+  color: white;
+ }
+ .btn.btn.dark-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #3a0ca3;
+  height: 150px;
+  width: 250px;
+  border-radius: 50%;
+ }

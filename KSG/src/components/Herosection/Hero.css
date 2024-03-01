@@ -1,0 +1,29 @@
+.Hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(27, 27, 27, 0.7),rgba(0, 0, 0, 0.7)),url("../../assets/pexels-yan-krukau-8199562.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text{
+    text-align: center;
+    max-width: 1300px;
+    /* max-width: 00px; */
+}
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.hero-text p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+.hero-text button{
+    border: 1px solid black;
+}
